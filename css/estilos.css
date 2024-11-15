@@ -1,0 +1,375 @@
+:root {
+    --blanco: #ffffff;
+    --gris: #f0f0f0;
+    --mate: #222222;
+    --negro: #000000;
+    --rojo: #ff0000;
+
+} /* mi paleta de colores */
+
+/* <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 800
+
+.rethink-sans-<uniquifier> {
+font-family: "Rethink Sans", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+}
+*/
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-size: 16px; /* 1 rem = 10px */
+    font-family: "Rethink Sans", sans-serif; /* Aplica la fuente a todo el diseño */
+    background-color: var(--gris);
+    max-width: 120rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    }
+h1 {
+    text-align: center;
+    justify-content: center;
+}
+.titulo1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--negro);
+    }
+.navegacionprincipal {
+    text-align: center;
+    color: var(--blanco);
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--mate);
+    border-radius: 1rem 1rem;
+}
+.navegacionprincipal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    }
+
+.navegacionprincipal a:hover{
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border-radius: 0.5rem 0.5rem;
+}   
+.hero {
+    background-image: url(/img/metal-gear-solid-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75rem;
+    border-radius: 2rem;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.contenido-hero {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonhero {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+    background-color: var(--rojo);
+    border-radius: 1rem;
+    width: 12rem;
+    height: 4rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 45rem; /* Ajusta este valor para posicionar el botón debajo del logo */
+    left: 30rem; /* Ajusta este valor para mover el botón hacia la izquierda */
+
+}
+.card a {
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: var(--rojo);
+    border-radius: 1rem;
+    width: 3rem;
+    height: 1rem;
+}
+.botonhero:hover {
+    cursor: pointer;
+}
+
+.seccion2 {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr)
+}
+.seccion2 section {
+    text-align: center;
+    color: var(--negro);
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 1rem 1rem;
+    font-size: 1rem;
+}
+.seccion2 section p {
+    text-align: center;
+    background-color: var(--mate);
+    color: var(--blanco);
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem 1rem;
+    font-size: 1rem;
+}
+section img {
+    width: 30rem;
+    height: 20rem;
+    background-color: var(--mate);
+    border-radius: 1rem;
+}
+img:hover {
+    cursor: pointer;
+}   
+.nuestras {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 2rem;
+    border-radius: 1rem 1rem;
+    padding: 3rem 0;
+}
+h2 span {
+    text-align: center;
+    background-color: var(--mate);
+    color: var(--blanco);
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 1rem 1rem;
+    font-size: 3rem;
+}
+h2 span:hover{
+    cursor: pointer;
+}
+.productos {
+    text-align: center;
+    color: var(--blanco);
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 1rem 1rem;
+    font-size: 3rem;
+    padding: 3rem 0;
+}
+.contenedor-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.card {
+    width: 30rem;
+    height: 50rem;
+    background-color: var(--mate);
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--blanco);
+    margin: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem 1rem;
+    font-size: 1rem;
+}
+.card img {
+    width: 100%;
+    height: 30rem;
+    background-color: var(--blanco);
+    border-radius: 1rem;
+}
+.contenido-card h3 {
+    text-align: center;
+    background-color: var(--mate);
+    color: var(--blanco);
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 1rem 1rem;
+    font-size: 3rem;
+}
+
+.contenido-card p {
+    text-align: center;
+    background-color: var(--mate);
+    color: var(--blanco);
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem 1rem;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+.contenido-card a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.formulario {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 3rem;
+    border-radius: 1rem 1rem;
+    padding: 3rem 0;
+    margin-top: 5rem;
+}
+.formulario span {
+    color: var(--blanco);
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 1rem 1rem;
+    font-size: 3rem;
+}
+.footer {
+    color: var(--blanco);
+    background-color: var(--mate);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 5rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+footer section p {
+    text-align: left;
+    text-decoration: none;
+    justify-content: center;
+    align-items:center;
+}    
+.formulario-contacto {
+        background-color: var(--mate);
+        width: min(60rem, 100% ); /**utiliza el valor mas pequeño**/
+        margin: 0 auto;
+        border-radius: 1rem;
+        box-sizing: border-box;
+}
+.formulario-contacto fieldset {
+    border: none;
+    margin: 1rem;
+}
+
+.formulario-contacto legend {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    color: var(--blanco);
+}
+.formulario-contacto textarea {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    max-width: 100%; /* Evita que se expanda más allá del ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    color: var(--mate);
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display:block;
+    resize: vertical;
+}
+.campo {
+    margin-bottom: 1rem;
+}
+.campo label {
+    color: var(--blanco);
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display:block;
+}
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: .5rem;
+}
+.boton {
+    width: 100%;
+}
+@media (max-width: 400px) {
+    .navegacionprincipal {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .botonhero { 
+    top: 45rem; /* Ajusta este valor para posicionar el botón debajo del logo */
+    left: 30rem; /* Ajusta este valor para mover el botón hacia la izquierda */
+                }
+}
+@media (max-width: 768px) {
+    section img {
+        width: 20rem;
+        height: 10rem;
+        background-color: var(--blanco);
+        border-radius: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .botonhero{ 
+    top: 15rem; /* Ajusta este valor para posicionar el botón debajo del logo */
+    left: 7rem; /* Ajusta este valor para mover el botón hacia la izquierda */    
+                }
+}
+@media (max-width: 400px) {
+    .hero {
+        background-image: url(/img/metal-gear-solid-logo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25rem;
+        border-radius: 2rem;
+        margin-top: 5rem;
+        position: relative;
+    }
+}
+@media (max-width: 400px) {
+    section img {
+        width: 10rem;
+        height: 5rem;
+        background-color: var(--blanco);
+        border-radius: 1rem;
+    }
+
+}
+@media (max-width: 400px) {
+    .footer {
+    align-items:left;
+    color: var(--blanco);
+    background-color: var(--mate);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    }
+    
+}
