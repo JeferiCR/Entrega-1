@@ -7,16 +7,6 @@
 
 } /* mi paleta de colores */
 
-/* <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 400 to 800
-
-.rethink-sans-<uniquifier> {
-font-family: "Rethink Sans", sans-serif;
-font-optical-sizing: auto;
-font-weight: <weight>;
-font-style: normal;
-}
-*/
 html {
     font-size: 62.5%;
 }
@@ -27,7 +17,7 @@ body {
     font-family: "Rethink Sans", sans-serif; /* Aplica la fuente a todo el diseño */
     background-color: var(--gris);
     max-width: 120rem;
-    margin: auto;
+    margin: 0;
     margin-bottom: 2rem;
     }
 h1 {
@@ -52,10 +42,34 @@ h1 {
     margin: 0 auto;
 }
 
+.navbar {
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--blanco);
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+
+}
+
+.navbar a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    }
+
+.navbar a:hover{
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border-radius: 0.5rem 0.5rem;
+} 
 .nav-bg {
     background-color: var(--mate);
     border-radius: 1rem 1rem;
 }
+
 .navegacionprincipal a {
     color: var(--blanco);
     text-decoration: none;
@@ -177,8 +191,13 @@ h2 span:hover{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
+
+.contenedor-card .card {
+    border: none;  /* Elimina el borde de las tarjetas */
+    --bs-card-border-color: transparent;  /* Asegura que la variable también se establece en transparente */
+}
+
 .card {
     width: 30rem;
     height: 50rem;
@@ -201,7 +220,7 @@ h2 span:hover{
     text-align: center;
     background-color: var(--mate);
     color: var(--blanco);
-    margin: 0 auto;
+    margin: 1rem;
     padding: 0.5rem;
     border-radius: 1rem 1rem;
     font-size: 3rem;
@@ -373,3 +392,11 @@ footer section p {
     }
     
 }
+
+#juegos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly; 
+}
+

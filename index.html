@@ -9,23 +9,34 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/estilos.css">
-
+    <!-- Agregar Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1 class="titulo1">Bienvenidos a la tienda de Metal Gear Solid</h1>
     </header>
-    <div class="nav-bg">
-        <nav class="navegacionprincipal contenedor">
-                <a href="#">Inicio</a>
-                <a  href="#">Quienes somos</a>
-                <a  href="#">Blog</a>
-                <a  href="#">Tienda</a>
-        </nav>
-        </div>
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #222222;">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav justify-content-around w-100">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                                <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+                                <a class="nav-link" href="mas-juegos.html">Más Juegos</a>
+                                <a class="nav-link" href="carrito.html">Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
         <section class="hero">
                 <div class="contenido-hero">
-                <a href="#" class="botonhero">Ver Merch</a>
+                <a href="mas-juegos.html" class="botonhero">Más Juegos</a>
                 </div>
         </section>
     <section>
@@ -37,69 +48,30 @@
                 <img class="imagen-resena" src="/img/resena2.png" alt="imagen-solid-snake">
                 <div class="informacion-resena">
                     <p class="nombre resena">Maria</p>
-                    <p class="texto-resena">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sapiente dolores recusandae incidunt aut dolore tenetur, maxime provident, aperiam error ex cum asperiores doloribus veniam molestiae at nam adipisci corporis!</p>
+                    <p class="texto-resena">Te quedó bien, apruebas seguro!! </p>
+                    
+
                 </div>
             </section>
             <section class="reseña2">
                 <img class="imagen-resena" src="/img/resena2.png" alt="imagen-solid-snake">
                 <div class="informacion-resena">
                     <p class="nombre resena">Juan</p>
-                    <p class="texto-resena">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sapiente dolores recusandae incidunt aut dolore tenetur, maxime provident, aperiam error ex cum asperiores doloribus veniam molestiae at nam adipisci corporis!</p>
+                    <p class="texto-resena">Te quedó bien, apruebas seguro!! </p>
                 </div>
             </section>
             <section class="reseña3">
                 <img class="imagen-resena" src="/img/resena2.png" alt="imagen-solid-snake">
                 <div class="informacion-resena">
                     <p class="nombre resena">Pedro</p>
-                    <p class="texto-resena">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sapiente dolores recusandae incidunt aut dolore tenetur, maxime provident, aperiam error ex cum asperiores doloribus veniam molestiae at nam adipisci corporis!</p>
+                    <p class="texto-resena">Te quedó bien, apruebas seguro!! </p>
+                    
                 </div>
             </section>
     </main>
         <div>
-            <h2 class="productos"><span> Productos </span></h2>
-        </div>
-        <div class="contenedor-card">
-        <div class="card">
-            <img src="/img/mgs1.jpeg" alt="portada-mgs1">
-            <div class="contenido-card">
-                <h3>Metal Gear Solid 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, optio.</p>
-                <a href="#">Comprar</a>
-            </div>
-        </div>
-            <div class="card">
-                <img src="/img/mgs2.jpeg" alt="portada-mgs1">
-                <div class="contenido-card">
-                    <h3>Metal Gear Solid 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, optio.</p>
-                    <a href="#">Comprar</a>
-                </div>
-        </div>
-        <div class="card">
-                <img src="/img/mgs3.jpeg" alt="portada-mgs1">
-                <div class="contenido-card">
-                    <h3>Metal Gear Solid 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, optio.</p>
-                    <a href="#">Comprar</a>
-                </div>
-        </div>
-        <div class="card">
-            <img src="/img/metal-4.png" alt="portada-mgs1">
-            <div class="contenido-card">
-                <h3>Metal Gear Solid 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, optio.</p>
-                <a href="#">Comprar</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/img/mgs5.jpg" alt="portada-mgs1">
-            <div class="contenido-card">
-                <h3>Metal Gear Solid 5</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, optio.</p>
-                <a href="#">Comprar</a>
-            </div>
-        </div>
-        </div>
+            <h2 class="productos"><span> Juegos PS </span></h2>
+            <div class="contenedor-card" id="productos-lista"></div>
     </section>
 
         <div>
@@ -136,13 +108,14 @@
                     </div>
                     </fieldset>
             </form>
+
         </section>
     <footer class="footer">
         <section>
             <p>Inicio</p>
             <p>Quienes somos</p>
-            <p>Blog</p>
-            <p>Tienda</p>
+            <p>Más Juegos</p>
+            <p>Carrito</p>
         </section>
         <section>
             <p>Categorías</p>
@@ -153,9 +126,14 @@
             <p>Todos los derechos reservados</p>
             <p>Jeferi Chacón</p>
         </section>
+       
+
         
     
     </footer>
-
+    <script src="carrito.js"></script>
+    <script src="js/script.js"></script>
+        <!-- Vincular Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
